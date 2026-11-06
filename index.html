@@ -35,22 +35,20 @@
       <div class="about-grid">
         <img class="avatar avatar-md" src="images/about.jpg" alt="Jules Hingant">
         <div class="about-text">
-          <p>Je suis Jules HINGANT, un passionné de Data Science fort d'une expérience concrète dans le développement de solutions informatiques.</p>
-          <p>Mon objectif est de mettre mes compétences techniques et ma capacité d'innovation au service de projets ambitieux.</p>
+          <p>Passionné de Data science, j'ai eu du mal à trouver ma voie, et c'est une bonne chose !</p>
+          <p>J'ai pu me lancer dans des projets, apprendre en faisant, échouer, corriger, recommencer...</p>
+          <p>Certains me diront indécis, je me vois polyvalent !</p>
         </div>
       </div>
 
       <p class="skills-label">Compétences</p>
       <ul class="pills">
         <li>Python</li>
-        <li>HTML</li>
         <li>Machine learning</li>
-        <li>Github</li>
-        <li>Pandas</li>
-        <li>API</li>
-        <li>Firebase</li>
-        <li>Prestashop</li>
+        <li>SQL</li>
         <li>Matplotlib</li>
+        <li>Pandas</li>
+        <li>Github</li>       
       </ul>
 
       <p class="skills-label">Compétences annexes</p>
@@ -66,88 +64,117 @@
       <div class="carousel">
         <button class="arrow prev" type="button" aria-label="Projet précédent">‹</button>
         <div class="slides">
-          <article class="slide is-active">
-            <div class="slide-copy">
-              <h3>Nexus - Participation Google Hackathon</h3>
-              <p>Nexus est une plateforme conçue pour libérer de la surcharge d'informations en transformant la veille numérique en une synthèse immédiate.</p>
-              <p>Nexus analyse les dernières actuallités et fournit un résumé sous format textuel. En parallele, un podcast est généré par Gemini 3 pour adapter le résumé au format audio.</p>
-              <ul class="pills">
-                <li>Tsx</li>
-                <li>HTML</li>
-                <li>API</li>
-                <li>React</li>
-                <li>GoogleAi studio</li>
-              </ul>
-            </div>
-            <p class="wordmark">NEXUS</p>
-          </article>
-
           <article class="slide">
             <div class="slide-copy">
               <h3>Voiture miniature autonome</h3>
-              <p>Réalisation d'un dispositif end to end qui permet la conduite autonome d'une voiture miniature (Légo) grâce à l'analyse en temps réel du flux vidéo frontale du véhicule par un réseau neuronal.</p>
-              <p>La conduite autonome étant intégrée dans un systême complexe intégrant un dispostif de cartographie en temps réel de la route ainsi que d'un systême de navigation et d'un systême de contrôle vocal de l'appareil. Le tout contrôlable depuis une application mobile.</p>
-              <p>Projet réalisé avec l'assistance de l'IA.</p>
-              <p class="video-label">Vidéo de Démonstration</p>
+              <p>Dispositif de conduite autonome d'une voiture miniature grâce à l'analyse en temps réel du flux vidéo frontale du véhicule par un CNN.</p>
+              <p>Cartographie en temps réel, navigation vers destination et systême de contrôle vocal de l'appareil. Application mobile dédiée.</p>
+              <p>Réalisé avec le soutien de l'IA.</p>
+              <ul class="pills">
+                <li>Python</li>
+                <li>Arduino</li>
+                <li>Pytorch</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+              </ul>
+            </div>
+            <div class="slide-media">
               <div class="video">
                 <iframe src="https://www.youtube.com/embed/0M7SqV_X2vE" title="Vidéo de démonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <ul class="pills">
-                <li>Python</li>
-                <li>Réseaux neuronaux</li>
-                <li>Github</li>
-                <li>Arduino</li>
-                <li>Pytorch</li>
-                <li>HTML</li>
-                <li>Matplotlib</li>
-                <li>API</li>
-                <li>React Native</li>
-                <li>Pandas</li>
-                <li>Gradle</li>
-                <li>Websocket</li>
-              </ul>
               <a class="pill-btn" href="https://www.youtube.com/watch?v=0M7SqV_X2vE" target="_blank" rel="noopener">Vidéo de présentation</a>
             </div>
+          </article>
+
+                    
+          <article class="slide">
+            <div class="slide-copy">
+              <h3>Détecteur de pylone sur imagerie aérienne</h3>
+              <p>L'ambition initiale était de créer un modèle capable d'identifier les pylones menacés par la végétation environnante.</p>
+              <p>Le projet s'avera trop compliqué à mettre en place, explications sur le github.</p>
+              
+              <ul class="pills">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>YOLO</li>
+                <li>Matplotlib</li>
+              </ul>
+              <a class="pill-btn centered" href="https://github.com/giloueeee/Cell-tower-detector" target="_blank" rel="noopener">Répertoire Github</a>
+            </div>
+            <img class="slide-photo" src="images/pylone.jpg" alt="Pylône détecté sur une photo aérienne, confiance 0,80">
+          </article>
+          
+          <article class="slide">
+            <div class="slide-copy">
+              <h3>Classification de scores bancaires</h3>
+              <p>Classification multiclasse de l’éligibilité au crédit via XGBoost en environnement de données dégradées.
+                 Un de mes premier projet, non respect des conventions et bonnes pratiques (soyez indulgents !)</p>
+              <p>Résultat : Précision moyenne de 80%</p>
+              <ul class="pills">
+                <li>Python</li>
+                <li>XGBoost</li>
+                <li>Pandas</li>
+                <li>Seaborn</li>
+                <li>Matplotlib</li>
+              </ul>
+              <a class="pill-btn centered" href="https://github.com/giloueeee/Bank-score-classification" target="_blank" rel="noopener">Répertoire Github</a>
+            </div>
+            <img class="slide-photo" src="images/Bank_scores.png" alt="Bank score classification">
           </article>
 
           <article class="slide">
             <div class="slide-copy">
               <h3>Geo Game CASH</h3>
-              <p>Disponible sur Android, il s'agit d'une application éducative destinée à tester les connaissances géographiques et les réflexes des joueurs tout en favorisant la compétitivité grâce au classement général.</p>
-              <p>Fonctionnant sur un système de classement hebdomadaire, le meilleur joueur de la semaine reçoit une récompense monétaire. Le joueur est ensuite contacté sur l'adresse mail renseignée sur son profil.</p>
-              <p>Projet réalisé à l'aide de l'IA.</p>
+              <p>Jeu mobile android compétitif destiné à tester les connaissances géographiques et les réflexes des joueurs. Le meilleur joueur de la semaine reçoit une récompense monétaire.</p>
+              <p>Réalisé avec le soutien de l'IA.</p>
               <ul class="pills">
                 <li>Typescript</li>
                 <li>React Native</li>
                 <li>Firebase</li>
                 <li>Expo</li>
                 <li>Gradle</li>
-                <li>Hermes</li>
-                <li>Groovy</li>
               </ul>
-              <a class="pill-btn" href="https://play.google.com/store/apps/details?id=com.lipo.geogame&hl=fr" target="_blank" rel="noopener">Geo Game CASH</a>
+              <a class="pill-btn centered" href="https://play.google.com/store/apps/details?id=com.lipo.geogame&hl=fr" target="_blank" rel="noopener">Geo Game CASH</a>
+            </div>
+            <img class="slide-photo" src="images/geogame.png?v=2" alt="Logo Geo Game CASH">
+          </article>
+          
+          <article class="slide">
+            <div class="slide-copy">
+              <h3>Film fenêtres et vitres</h3>
+              <p>Création de ma boutique en ligne de revente de film anti chaleur, promotion par SEA et distribution de flyers.</p>
+              <p>Plusieurs centaines de visites et quelques ventes générés en l'espace de quelques semaines.</p>
+              <ul class="pills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Mollie</li>
+              </ul>
+              <a class="pill-btn centered" href="https://film-fenetres-vitres.fr" target="_blank" rel="noopener">Film Fenêtres et Vitres</a>
+
+            </div>
+            <div class="slide-media">
+              <img class="slide-photo" src="images/film applied.png" alt="Pylône détecté sur une photo aérienne, confiance 0,80">
             </div>
           </article>
 
-          <article class="slide">
+          <article class="slide is-active">
             <div class="slide-copy">
-              <h3>Classification de scores bancaires</h3>
-              <p>Classification multiclasse de l’éligibilité au crédit via XGBoost en environnement de données dégradées. Le projet a consisté à traiter une base de données brutes présentant de fortes lacunes.</p>
-              <p>Sélection des features, nettoyage des données numériques, encodage de données textuelles, imputation des valeurs manquantes, création d'un modèle avec XGBoost, évaluation du modèle, Itération de différents hyperparamètres.</p>
-              <p>Résultat : une précision moyenne de 80%</p>
+              <h3>Nexus - Participation Google Hackathon</h3>
+              <p>Nexus est une plateforme conçue pour libérer de la surcharge d'informations en transformant la veille numérique en une synthèse immédiate ( format textuel et audio).</p>
               <ul class="pills">
-                <li>Python</li>
-                <li>XGBoost</li>
-                <li>Github</li>
-                <li>Pandas</li>
-                <li>Seaborn</li>
-                <li>Matplotlib</li>
+                <li>GoogleAi studio</li>
               </ul>
-              <a class="pill-btn" href="https://github.com/giloueeee/Bank-score-classification" target="_blank" rel="noopener">Répertoire Github</a>
+            </div>
+            <div class="slide-media">
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/ocvS3LT45Qo" title="Vidéo de Nexus" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <a class="pill-btn" href="https://www.youtube.com/watch?v=ocvS3LT45Qo" target="_blank" rel="noopener">Vidéo de présentation</a>
             </div>
           </article>
         </div>
         <button class="arrow next" type="button" aria-label="Projet suivant">›</button>
+        <div class="slide-dots" aria-live="polite"></div>
       </div>
     </section>
 
@@ -155,80 +182,81 @@
       <h2>Mon parcours</h2>
       <p class="lead">Curieux et assidu, je me lance sans relâche dans différents projets personnels. C'est pourquoi résumer mon parcours uniquement par mes études donnerait une vision incomplète de mes compétences.</p>
 
-      <div class="columns">
-        <div class="column">
+      <div class="tracks">
+        <div class="track">
           <h3>Scolaire</h3>
-          <div class="school">
-            <div class="when">
-              <span>Septembre 2022</span>
-              <span>Septembre 2023</span>
-              <span>Septembre 2024</span>
-              <span>Septembre 2025</span>
-              <span>Février 2026</span>
+          <div class="scale">
+            <div class="years" aria-hidden="true">
+              <span style="--at: 0">Sept. 2022</span>
+              <span style="--at: 12">Sept. 2023</span>
+              <span style="--at: 24">Sept. 2024</span>
+              <span style="--at: 36">Sept. 2025</span>
+              <span style="--at: 48">Sept. 2026</span>
             </div>
-            <div class="cards">
-              <article class="chevron light tall">
-                <h4>BTS<br>commerce<br>international</h4>
-                <ul>
-                  <li>Stage de 3 mois en Bosnie Herzégovine</li>
-                  <li>Maitrise avancée de l'anglais</li>
-                </ul>
+            <div class="chain chain-scaled">
+              <article class="step light" style="--start: 0; --len: 24">
+                <h4>BTS commerce international</h4>
+                <p>Stage de 3 mois en Bosnie Herzégovine. Maitrise avancée de l'anglais.</p>
               </article>
-              <article class="chevron gray tall">
-                <h4>Bachelor<br>marketing digital<br>en alternance</h4>
-                <ul>
-                  <li>Gestion d'un site internet marchand</li>
-                  <li>Manipulation et importation de bases de données massives</li>
-                </ul>
+              <article class="step gray" style="--start: 24; --len: 12">
+                <h4>Alternance en marketing digital</h4>
+                <p>Gestion d'un site internet marchand. Manipulation et importation de bases de données massives.</p>
               </article>
-              <article class="chevron dark">
-                <h4>Formations CNAM<br>(cours du soir)<br>data science /<br>réseaux neuronaux</h4>
+              <article class="step dark share-right notch" style="--start: 41; --len: 7">
+                <h4>Formation CNAM</h4>
+                <p>Apprentissage statistique et réseaux de neurones</p>
+              </article>
+              <article class="step light" style="--start: 48; --len: 7">
+                <h4>DU Sorbonne data analytics</h4>
+                <p>Visualisation, ML, Deep learning, could computing ...</p>
+              </article>
+              <article class="step-side" style="--start: 36; --len: 12; --gap: 5">
+                <p><span>Interim en usine et CDD en ferme</span></p>
               </article>
             </div>
           </div>
         </div>
 
-        <div class="column">
+        <div class="track">
           <h3>Projets personnels</h3>
-          <div class="projects">
-            <div class="project-row">
-              <article class="chevron light">
-                <h4>Social media<br>manager pour un<br>fabricant de gateaux apéritifs</h4>
-              </article>
-            </div>
-            <div class="project-row">
-              <article class="chevron gray">
-                <h4>Web developer<br>amateur</h4>
-              </article>
-              <p>Réalisation de sites vitrines pour plusieurs clients</p>
-            </div>
-            <div class="project-row">
-              <article class="chevron dark">
-                <h4>Créateur de contenu<br>cinéma</h4>
-                <a href="https://www.tiktok.com/@nav__9" target="_blank" rel="noopener">@NAV__9</a>
-              </article>
-              <p>40k abonnés /<br>30 millions de vues</p>
-            </div>
-            <div class="project-row">
-              <article class="chevron gray">
-                <h4>Création d'une app mobile android</h4>
-                <a href="https://play.google.com/store/apps/details?id=com.lipo.geogame&hl=fr" target="_blank" rel="noopener">GEO GAME CASH</a>
-              </article>
-              <p>Mon contenu n'étant pas monétisable, je crée une application mobile pour amortir le temps investit</p>
-            </div>
-            <div class="project-row">
-              <article class="chevron light">
-                <h4>Création d'une voiture<br>miniature autonome</h4>
-                <a href="https://www.youtube.com/watch?v=0M7SqV_X2vE" target="_blank" rel="noopener">Video youtube</a>
-              </article>
-              <p>Dispositif end to end basé sur un réseau neuronal qui analyse le flux vidéo de la caméra frontale du vehicule.</p>
-            </div>
-            <div class="project-row">
-              <article class="chevron gray">
-                <h4>Perfectionnement et concours</h4>
-              </article>
-              <p>Renforcement des connaissances fondamentales en DS / ML</p>
-            </div>
+          <div class="chain chain-scaled chain-projects">
+            <article class="step light" style="--start: 0; --len: 10">
+              <h4>Social media manager</h4>
+              <p>Chez un fabricant de gateaux apéritifs.</p>
+            </article>
+            <article class="step gray" style="--start: 10; --len: 6">
+              <h4>Web developer amateur</h4>
+              <p>Réalisation de sites vitrines pour plusieurs clients.</p>
+            </article>
+            <article class="step dark" style="--start: 16; --len: 8">
+              <h4>Créateur de contenu cinéma</h4>
+              <p>40k abonnés / 30 millions de vues.</p>
+              <a href="https://www.tiktok.com/@nav__9" target="_blank" rel="noopener">@NAV__9</a>
+            </article>
+            <article class="step light" style="--start: 24; --len: 6">
+              <h4>Application Android</h4>
+              <p>Jeu mobile compétitif, les joueurs doivent placer les pays sur une carte.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.lipo.geogame&hl=fr" target="_blank" rel="noopener">GEO GAME CASH</a>
+            </article>
+            <article class="step gray" style="--start: 30; --len: 6">
+              <h4>Voiture miniature autonome</h4>
+              <p>Analyse du flux vidéo de la caméra frontale et prise de décision en temps réel.</p>
+              <a href="https://www.youtube.com/watch?v=0M7SqV_X2vE" target="_blank" rel="noopener">Video youtube</a>
+            </article>
+            <article class="step dark" style="--start: 36; --len: 5">
+              <h4>Perfectionnement et concours</h4>
+              <p>Renforcement des connaissances fondamentales en DS / ML.</p>
+            </article>
+            <article class="step light settle" style="--start: 41; --len: 3.5">
+              <h4>Système de détection de pylone par imagerie aérienne</h4>
+            </article>
+            <article class="step gray settle" style="--start: 44.5; --len: 3.5">
+              <h4>Création de ma boutique en ligne de film pour vitres</h4>
+            </article>
+            <article class="step dark" style="--start: 48; --len: 7">
+              <h4>Approfondissement</h4>
+              <p>Lecture d'ouvrages et veille sur les dernières avancées en DS et ML</p>
+            </article>
           </div>
         </div>
       </div>
@@ -255,6 +283,6 @@
     </nav>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

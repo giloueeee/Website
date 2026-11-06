@@ -1,10 +1,21 @@
 const slides = [...document.querySelectorAll(".slide")];
+const dots = document.querySelector(".slide-dots");
 let index = 0;
+
+slides.forEach(() => {
+  const dot = document.createElement("span");
+  dot.className = "slide-dot";
+  dots.appendChild(dot);
+});
 
 function show(next) {
   index = (next + slides.length) % slides.length;
   slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+  [...dots.children].forEach((dot, i) => dot.classList.toggle("is-current", i === index));
+  dots.setAttribute("aria-label", `Projet ${index + 1} sur ${slides.length}`);
 }
+
+show(0);
 
 document.querySelector(".arrow.next").addEventListener("click", () => show(index + 1));
 document.querySelector(".arrow.prev").addEventListener("click", () => show(index - 1));
