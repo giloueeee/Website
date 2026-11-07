@@ -8,11 +8,28 @@ slides.forEach(() => {
   dots.appendChild(dot);
 });
 
+function placeArrows() {
+  const arrows = document.querySelectorAll(".arrow");
+  if (window.innerWidth > 800) {
+    arrows.forEach((arrow) => arrow.style.removeProperty("top"));
+    return;
+  }
+  const imageSlide = document.querySelector(".slide:has(> .slide-photo)") || document.querySelector(".slide:has(.slide-photo)");
+  const title = imageSlide?.querySelector("h3");
+  const carousel = document.querySelector(".carousel");
+  if (!title || !carousel) return;
+  const top = title.getBoundingClientRect().top - carousel.getBoundingClientRect().top;
+  arrows.forEach((arrow) => {
+    arrow.style.top = `${Math.max(0, top)}px`;
+  });
+}
+
 function show(next) {
   index = (next + slides.length) % slides.length;
   slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
   [...dots.children].forEach((dot, i) => dot.classList.toggle("is-current", i === index));
   dots.setAttribute("aria-label", `Projet ${index + 1} sur ${slides.length}`);
+  placeArrows();
 }
 
 show(0);
@@ -22,15 +39,27 @@ document.querySelector(".arrow.prev").addEventListener("click", () => show(index
 
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("#nav");
+const backdrop = document.querySelector(".nav-backdrop");
 
-toggle.addEventListener("click", () => {
-  const open = nav.classList.toggle("is-open");
+function setMenu(open) {
+  nav.classList.toggle("is-open", open);
+  document.body.classList.toggle("menu-open", open);
   toggle.setAttribute("aria-expanded", String(open));
-});
+}
+
+toggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
+backdrop.addEventListener("click", () => setMenu(false));
+document.querySelector(".nav-close").addEventListener("click", () => setMenu(false));
 
 nav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", "false");
-  });
+  link.addEventListener("click", () => setMenu(false));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenu(false);
+});
+
+window.addEventListener("resize", placeArrows);
+document.querySelectorAll(".slide-photo").forEach((img) => {
+  img.addEventListener("load", placeArrows);
 });

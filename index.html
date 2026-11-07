@@ -7,16 +7,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=59">
 </head>
 <body>
   <header class="header">
     <a class="cv-btn" href="cv.pdf" target="_blank" rel="noopener">Mon CV</a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="nav-backdrop"></div>
     <nav id="nav" class="nav">
+      <button class="nav-close" type="button" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
       <a href="#apropos">À propos</a>
       <a href="#travaux">Mes travaux</a>
       <a href="#parcours">Mon parcours</a>
+      <a class="cv-btn nav-cv" href="cv.pdf" target="_blank" rel="noopener">Mon CV</a>
     </nav>
   </header>
 
@@ -27,7 +34,7 @@
         <p class="role">Data scientist junior</p>
         <a class="pill-btn" href="#travaux">Mes travaux</a>
       </div>
-      <img class="avatar avatar-lg" src="images/portrait.jpg" alt="Portrait de Jules Hingant">
+      <img class="avatar avatar-lg" src="images/pdp26-2.jpg" alt="Portrait de Jules Hingant">
     </section>
 
     <section id="apropos" class="section about">
@@ -35,7 +42,7 @@
       <div class="about-grid">
         <img class="avatar avatar-md" src="images/about.jpg" alt="Jules Hingant">
         <div class="about-text">
-          <p>Passionné de Data science, j'ai eu du mal à trouver ma voie, et c'est une bonne chose !</p>
+          <p>Passionné de Data sciences, j'ai eu du mal à trouver ma voie, et c'est une bonne chose !</p>
           <p>J'ai pu me lancer dans des projets, apprendre en faisant, échouer, corriger, recommencer...</p>
           <p>Certains me diront indécis, je me vois polyvalent !</p>
         </div>
@@ -69,7 +76,7 @@
             <div class="slide-copy">
               <h3>Voiture miniature autonome</h3>
               <p>Dispositif de conduite autonome d'une voiture miniature grâce à l'analyse en temps réel du flux vidéo frontale du véhicule par un CNN.</p>
-              <p>Cartographie en temps réel, navigation vers destination et systême de contrôle vocal de l'appareil. Application mobile dédiée.</p>
+              <p>Cartographie en temps réel, navigation vers destination et système de contrôle vocal de l'appareil. Application mobile dédiée.</p>
               <p>Réalisé avec le soutien de l'IA.</p>
               <ul class="pills">
                 <li>Python</li>
@@ -108,14 +115,12 @@
           <article class="slide">
             <div class="slide-copy">
               <h3>Classification de scores bancaires</h3>
-              <p>Classification multiclasse de l’éligibilité au crédit via XGBoost en environnement de données dégradées.
-                 Un de mes premier projet, non respect des conventions et bonnes pratiques (soyez indulgents !)</p>
-              <p>Résultat : Précision moyenne de 80%</p>
+              <p>Classification de l’éligibilité au crédit via XGBoost en environnement de données dégradées.</p>
+              <p>Un de mes premiers projet, non respect des conventions et bonnes pratiques (soyez indulgents !)</p>
               <ul class="pills">
                 <li>Python</li>
                 <li>XGBoost</li>
                 <li>Pandas</li>
-                <li>Seaborn</li>
                 <li>Matplotlib</li>
               </ul>
               <a class="pill-btn centered" href="https://github.com/giloueeee/Bank-score-classification" target="_blank" rel="noopener">Répertoire Github</a>
@@ -144,7 +149,7 @@
             <div class="slide-copy">
               <h3>Film fenêtres et vitres</h3>
               <p>Création de ma boutique en ligne de revente de film anti chaleur, promotion par SEA et distribution de flyers.</p>
-              <p>Plusieurs centaines de visites et quelques ventes générés en l'espace de quelques semaines.</p>
+              <p>Plusieurs centaines de visites et quelques ventes générées en l'espace de quelques semaines.</p>
               <ul class="pills">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -161,7 +166,7 @@
           <article class="slide is-active">
             <div class="slide-copy">
               <h3>Nexus - Participation Google Hackathon</h3>
-              <p>Nexus est une plateforme conçue pour libérer de la surcharge d'informations en transformant la veille numérique en une synthèse immédiate ( format textuel et audio).</p>
+              <p>Plateforme conçue pour libérer de la surcharge d'informations en transformant la veille en une synthèse immédiate (format textuel et audio).</p>
               <ul class="pills">
                 <li>GoogleAi studio</li>
               </ul>
@@ -186,7 +191,7 @@
       <div class="tracks">
         <div class="track">
           <h3>Scolaire</h3>
-          <div class="scale">
+          <div class="scale scale-school">
             <div class="years" aria-hidden="true">
               <span style="--at: 0">Sept. 2022</span>
               <span style="--at: 12">Sept. 2023</span>
@@ -220,6 +225,14 @@
 
         <div class="track">
           <h3>Projets personnels</h3>
+          <div class="scale scale-projects">
+            <div class="years years-mobile" aria-hidden="true">
+              <span style="--at: 0">Sept. 2022</span>
+              <span style="--at: 12">Sept. 2023</span>
+              <span style="--at: 24">Sept. 2024</span>
+              <span style="--at: 36">Sept. 2025</span>
+              <span style="--at: 48">Sept. 2026</span>
+            </div>
           <div class="chain chain-scaled chain-projects">
             <article class="step light" style="--start: 0; --len: 10">
               <h4>Social media manager</h4>
@@ -234,30 +247,31 @@
               <p>40k abonnés / 30 millions de vues.</p>
               <a href="https://www.tiktok.com/@nav__9" target="_blank" rel="noopener">@NAV__9</a>
             </article>
-            <article class="step light" style="--start: 24; --len: 6">
+            <article class="step light sink" style="--start: 24; --len: 6">
               <h4>Application Android</h4>
               <p>Jeu mobile compétitif, les joueurs doivent placer les pays sur une carte.</p>
               <a href="https://play.google.com/store/apps/details?id=com.lipo.geogame&hl=fr" target="_blank" rel="noopener">GEO GAME CASH</a>
             </article>
-            <article class="step gray" style="--start: 30; --len: 6">
+            <article class="step gray sink" style="--start: 30; --len: 6">
               <h4>Voiture miniature autonome</h4>
               <p>Analyse du flux vidéo de la caméra frontale et prise de décision en temps réel.</p>
               <a href="https://www.youtube.com/watch?v=0M7SqV_X2vE" target="_blank" rel="noopener">Video youtube</a>
             </article>
-            <article class="step dark" style="--start: 36; --len: 5">
+            <article class="step dark sink" style="--start: 36; --len: 5">
               <h4>Perfectionnement et concours</h4>
               <p>Renforcement des connaissances fondamentales en DS / ML.</p>
             </article>
-            <article class="step light settle" style="--start: 41; --len: 3.5">
+            <article class="step light settle sink" style="--start: 41; --len: 3.5">
               <h4>Système de détection de pylone par imagerie aérienne</h4>
             </article>
-            <article class="step gray settle" style="--start: 44.5; --len: 3.5">
+            <article class="step gray settle sink" style="--start: 44.5; --len: 3.5">
               <h4>Création de ma boutique en ligne de film pour vitres</h4>
             </article>
-            <article class="step dark" style="--start: 48; --len: 7">
+            <article class="step dark sink" style="--start: 48; --len: 7">
               <h4>Approfondissement</h4>
               <p>Lecture d'ouvrages et veille sur les dernières avancées en DS et ML</p>
             </article>
+          </div>
           </div>
         </div>
       </div>
@@ -284,6 +298,6 @@
     </nav>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
