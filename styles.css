@@ -742,7 +742,7 @@ a { color: inherit; }
   .track h3 { font-size: 22px; }
   .step h4 { font-size: 16px; }
   .step p { font-size: 13px; }
-  .avatar-lg { width: 180px; height: 180px; filter: brightness(1.2)}
+  .avatar-lg { width: 180px; height: 180px; filter: brightness(1.8)}
 
   .about-grid .avatar { display: none; }
 
