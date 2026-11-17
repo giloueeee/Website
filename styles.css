@@ -125,7 +125,7 @@ a { color: inherit; }
   flex: none;
 }
 
-.avatar-lg { width: 254px; height: 254px; }
+.avatar-lg { width: 254px; height: 254px; filter: brightness(1.8)}
 .avatar-md { width: 160px; height: 160px; }
 
 .section {
